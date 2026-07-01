@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+if git diff --cached --name-only | grep -E '(^|/)node_modules/|(^|/).DS_Store$|.env' >/dev/null; then
+  echo "No subas dependencias, temporales o secretos."
+  exit 1
+fi
+

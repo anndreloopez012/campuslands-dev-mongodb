@@ -1,0 +1,12 @@
+.DS_Store
+node_modules/
+.env
+.env.*
+*.log
+.vscode/
+.idea/
+dump/
+*.bson
+*.wt
+coverage/
+
